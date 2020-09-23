@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1>Welcome to prediction section!</h1>
+    <p>Please fill out the form: </p>
+    <form method="POST" action="{{url_for('result')}}">
+    
+        age: <input type="float" name="age"/>
+        <p>sex: <input type="float" name="sex"/></p>
+        <p>Chest pain: <input type="float" name="cp"/></p>
+        <p>Resting blood pressure: <input type="float" name="restbps"/></p>
+        <p>Cholesterol: <input type="float" name="chol"/></p>
+        <p>Fasting blood sugar: <input type="float" name="fbs"/></p>
+        <p>Resting ecg results: <input type="float" name="restecg"/></p>
+        <p>Thalach: <input type="float" name="thalach"/></p>
+        <p>Exercise induced angina: <input type="float" name="exang"/></p>
+        <p>Oldpeak : <input type="float" name="oldpeak"/></p>
+        <p>Slope: <input type="float" name="slope"/></p>
+        <p>Vessel color changed by fluoroscopy: <input type="float" name="ca"/></p>
+        <p>Thalasemia: <input type="float" name="thal"/></p>
+        <input type="submit" value="Predict">
+
+    </form>
+</div>
+
+{% endblock %}

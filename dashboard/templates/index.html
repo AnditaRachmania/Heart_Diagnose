@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+    <p>Welcome to Heart Diagnose Program!</p>
+    <a href="{{url_for('predict')}}">Predict probability of one's heart disease!</a>
+    <p></p>
+    <a href="{{url_for('plot')}}">Data Visualization</a>
+    <p></p>
+    <a href="{{url_for('dataset')}}">Raw Dataset</a>
+    <p></p>
+    <a href="{{url_for('binned')}}">Columns for predictions</a>
+    
+    
+</div>
+
+
+{% endblock %}
